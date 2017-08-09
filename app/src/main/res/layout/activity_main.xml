@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omar_hidrogo_local.mislugaresconcurridos.MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un Lugar Favorito de Torreon"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_below="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:id="@+id/img1"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/torreon1"
+                android:layout_marginLeft="10dp"
+                android:onClick="irMapa1"/>
+
+            <ImageButton
+                android:id="@+id/img2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/torreon2"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:onClick="irMapa2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:id="@+id/img3"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/torreon3"
+                android:layout_marginLeft="10dp"
+                android:onClick="irMapa3"/>
+
+            <ImageButton
+                android:id="@+id/img4"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/torreon4"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:onClick="irMapa4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
